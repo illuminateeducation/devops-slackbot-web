@@ -1,0 +1,3 @@
+<?php
+define("SLACK_SIGNATURE_SECRET", "<SLACK-APP-SIGNATURE-HERE>");
+

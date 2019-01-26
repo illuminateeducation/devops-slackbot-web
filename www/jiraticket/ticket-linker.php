@@ -1,6 +1,6 @@
 <?php
 // JIRA Ticket Linker
-// Note: `throw new Exception("my error message");' does not work, results as a server error
+// Note: `throw new Exception("my error message");' does not work, results in a server error
 //	 Instead, using `exit("my error message");' to "gracefully" quit
 
 // Get the file that contains our secure signature

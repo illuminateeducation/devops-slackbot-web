@@ -37,7 +37,7 @@ if(strlen($ticket_id) > 25)
 	exit("Ticket ID is too long. Must be less than 25 characters");
 }
 
-// Make sure $ticket_id is 
+// Make sure $ticket_id is in a valid format
 if(!preg_match("/^[a-zA-Z0-9]*-[0-9]*$/", $ticket_id))
 {
 	exit("Invalid ticket ID.");

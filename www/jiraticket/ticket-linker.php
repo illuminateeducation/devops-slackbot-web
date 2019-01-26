@@ -1,7 +1,8 @@
 <?php
 // JIRA Ticket Linker
 // Note: `throw new Exception("my error message");' does not work, results in a server error
-//	 Instead, using `exit("my error message");' to "gracefully" quit
+//	 Instead, using `exit("my error message");' to "gracefully" quit while still showing a message
+//	 in slack
 
 // Get the file that contains our secure signature
 include_once("../../includes/constants.php");		// Need constants: SLACK_SIGNATURE_SECRET and ATLASSIAN_PROJECT

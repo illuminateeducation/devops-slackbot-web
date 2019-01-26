@@ -1,4 +1,4 @@
-# JIRA Slackbot LAMP Web Server
+# Slackbot LAMP Web Server
 
 ### TODO:
 * Expand configuration instructions/options in README.md

@@ -4,7 +4,7 @@
 //	 Instead, using `exit("my error message");' to "gracefully" quit
 
 // Get the file that contains our secure signature
-include_once("../constants.php");	// Need constant: SLACK_SIGNATURE_SECRET
+include_once("../constants.php");	// Need constant: SLACK_SIGNATURE_SECRET and ATLASSIAN_PROJECT
 include_once("../slack_verify.php");	// Need function: is_slack_signed(...)
 
 // Configure variables

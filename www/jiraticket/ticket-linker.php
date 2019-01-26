@@ -5,7 +5,7 @@
 //	 in slack
 
 // Get the file that contains our secure signature
-include_once("../../includes/constants.php");		// Need constants: SLACK_SIGNATURE_SECRET and ATLASSIAN_PROJECT
+include_once("../../includes/constants.php");		// Need constants: JIRA_TICKET_LINKER_SECRET and ATLASSIAN_PROJECT
 include_once("../../includes/slack_verify.php");	// Need function: is_slack_signed(...)
 
 // Configure variables
@@ -16,7 +16,7 @@ $timestamp = $headers["X-Slack-Request-Timestamp"];
 $slack_signed = is_slack_signed(
 	$timestamp,
 	$headers["X-Slack-Signature"],
-	SLACK_SIGNATURE_SECRET,
+	JIRA_TICKET_LINKER_SECRET,
 	file_get_contents("php://input")
 );
 

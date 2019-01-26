@@ -46,7 +46,7 @@ if(!preg_match("/^[a-zA-Z0-9]*-[0-9]*$/", $ticket_id))
 // The actual response body
 $resp_arr = array(
 	"response_type" => "in_channel",
-	"text" => "https://illuminate.atlassian.net/browse/$ticket_id"
+	"text" => "https://".ATLASSIAN_PROJECT.".atlassian.net/browse/$ticket_id"
 );
 
 // Make the curl request

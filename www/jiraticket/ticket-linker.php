@@ -44,9 +44,9 @@ if(!$slack_signed)
 	exit("Invalid request.");
 }
 
-$linker_username = filter_input(INPUT_POST, "user_name");
+$linker_user_id = filter_input(INPUT_POST, "user_id");
 $response_url = "https://".ATLASSIAN_PROJECT.".atlassian.net/browse/{$ticket_id}";
-$response_msg = "{$linker_username} linked a ticket: {$response_url}";
+$response_msg = "<@{$linker_user_id}> linked a ticket: {$response_url}";
 
 // The actual response body
 $resp_arr = array(
